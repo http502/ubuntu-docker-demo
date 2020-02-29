@@ -1,0 +1,26 @@
+image: burhantog/ubuntu-demo:latest
+tags: [ "1.0.0", "1", "1.0", "latest" ]
+manifests:
+  - image: burhantog/ubuntu-demo:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: burhantog/ubuntu-demo:386
+    platform:
+      architecture: 386
+      os: linux
+  - image: burhantog/ubuntu-demo:arm32v5
+    platform:
+      architecture: arm
+      os: linux
+      variant: v5
+  - image: burhantog/ubuntu-demo:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: burhantog/ubuntu-demo:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
